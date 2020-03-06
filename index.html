@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+
+
+<body>
+
+    <h1>This is my Calculator. There are many like it, but this one is mine</h1>
+
+ <div class="grid-container"> 
+  
+        <!-- <input type="text" id="Ergebnis"> -->
+        
+        <!-- <td><input type="button" value="1" onclick="dis('1')"/> </td>  -->
+
+    <input type="button" class="button" value="1" onclick="rechnen(1)">
+    <input type="button" class="button" value="2"onclick="rechnen(2)">
+    <input type="button" class="button" value="3"onclick="rechnen(3)">
+    <input type="button" class="button" value="4"onclick="rechnen(4)">
+    <input type="button" class="button" value="5"onclick="rechnen(5)">
+    <input type="button" class="button" value="6"onclick="rechnen(6)">
+    <input type="button" class="button" value="7"onclick="rechnen(7)">
+    <input type="button" class="button" value="8"onclick="rechnen(8)">
+    <input type="button" class="button" value="9"onclick="rechnen(9)">
+    <input type="button" class="button" value="0"onclick="rechnen(0)">
+    <input type="button" class="button" value="*"onclick="rechnen(*)">
+    <input type="button" class="button" value="+"onclick="rechnen('+')">
+    <input type="button" class="button" value="-"onclick="rechnen(-)">
+    <input type="button" class="button" value="/"onclick="rechnen(/)">
+
+    <input type="button" class="button" value="c" onclick="clr()"/>
+    <input type="button" class="button" value="=" onclick="solve()"/>
+</div> 
+<div>
+    <p id="Ergebnis"></p>
+</div>
+
+<script src="assets/js/main.js"></script>   
+</body>
+</html>
