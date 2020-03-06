@@ -6,30 +6,53 @@
 
 
 
-var x = 5;
-var y = 2;
-var z = x + y;
-document.getElementById("Ergebnis").innerHTML = z;
 
 
+function calcMe(x) {
+    console.log(x)
+    document.getElementById("Ergebnis").innerHTML += x;
+}
 
+function clear(){
+    document.getElementById("Ergebnis").innerHTML="";
+}
+function result(){
+    
+     document.getElementById("Ergebnis").innerHTML=eval;
+     (document.getElementById("Ergebnis").innerHTML)
+ }
 
 // function that display value 
-// function rechnen() 
+// function dis(val) 
 //  { 
-//      document.getElementsById("Ergebnis").innerHTML = "1";
+//      document.getElementById("result").value+=val 
 // } 
   
 // function that evaluates the digit and return result 
-//  function solve() 
-//  { 
-//     let x = document.getElementById("Ergebnis").value 
-//     let y = eval(x) 
-//     document.getElementById("Ergebnis").value = y 
-// } 
+ function solve() 
+ { 
+    let x = document.getElementById("result").value 
+    let y = eval(x) 
+    document.getElementById("result").value = y 
+} 
   
-// // function that clear the display 
-//  function clr() 
-//  { 
-//      document.getElementById("Ergebnis").value = "" 
-// } 
+// function that clear the display 
+ function clr() 
+ { 
+     document.getElementById("result").value = "" 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
