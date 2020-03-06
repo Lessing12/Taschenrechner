@@ -16,11 +16,19 @@ function calcMe(x) {
 function clearME(){
     document.getElementById("Ergebnis").innerHTML = " ";
 }
-function resultMe(){
+// function resutMe(){
     
-    document.getElementById("Ergebnis").innerHTML=eval;
-    document.getElementById("Ergebnis").innerHTML
-  }
+//     document.getElementById("Ergebnis").innerHTML=eval;
+//     document.getElementById("Ergebnis").innerHTML
+//   }
+
+  function resultMe() 
+  { 
+   document.getElementById("Ergebnis").innerHTML = eval(document.getElementById("Ergebnis").innerHTML);
+    
+   
+ } 
+   
 
 
  
