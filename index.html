@@ -21,24 +21,28 @@
 
     
 
-<button class="number" onclick="calcMe('1')" id="1">1</button>
-<button class="number" onclick="calcMe('2')" id="*">2</button>
-<button class="number" onclick="calcMe('3')" id="*">3</button>
-<button class="number" onclick="calcMe('4')" id="*">4</button>
-<button class="number" onclick="calcMe('5')" id="*">5</button>
-<button class="number" onclick="calcMe('6')" id="*">6</button>
-<button class="number" onclick="calcMe('7')" id="*">7</button>
-<button class="number" onclick="calcMe('8')" id="*">8</button>
-<button class="number" onclick="calcMe('9')" id="*">9</button>
-<button class="number" onclick="calcMe('0')" id="*">0</button>
+<button class="number" onclick="calcMe('1')" >1</button>
+<button class="number" onclick="calcMe('2')" >2</button>
+<button class="number" onclick="calcMe('3')" >3</button>
+<button class="number" onclick="calcMe('4')" >4</button>
+<button class="number" onclick="calcMe('5')" >5</button>
+<button class="number" onclick="calcMe('6')" >6</button>
+<button class="number" onclick="calcMe('7')" >7</button>
+<button class="number" onclick="calcMe('8')" >8</button>
+<button class="number" onclick="calcMe('9')" >9</button>
+<button class="number" onclick="calcMe('0')" >0</button>
 
-<button class="operator" onclick="calcMe('*')" id="*">*</button>
-<button class="operator" onclick="calcMe('+')" id="+">+</button>
-<button class="operator" onclick="calcMe('-')" id="-">-</button>
-<button class="operator" onclick="calcMe('/')" id="/">/</button>
+<button class="operator" onclick="calcMe('*')">*</button>
+<button class="operator" onclick="calcMe('+')" >+</button>
+<button class="operator" onclick="calcMe('-')" >-</button>
+<button class="operator" onclick="calcMe('/')" >/</button>
 
-<button class="operator" onclick="clearME('CL')" id="*">CL</button>
-<button class="operator" onclick="resultMe('Ergebnis')" id="*">=</button>
+<button class="operator" onclick="calcMe('.')" >.</button>
+<button class="operator"></button>
+
+
+<button class="operator" onclick="clearMe('CL')" >CL</button>
+<button class="operator" onclick="resultMe('Ergebnis')">=</button>
 
 
 
@@ -48,40 +52,7 @@
 </div>
 
 
-<table border="1"> 
-    <tr> 
-       <td colspan="3"><input type="text" id="result"/></td> 
-       <!-- clr() function will call clr to clear all value -->
-       <td><input type="button" value="c" onclick="clr()"/> </td> 
-    </tr> 
-    <tr> 
-       <!-- create button and assign value to each button -->
-       <!-- dis("1") will call function dis to display value -->
-       <td><input type="button" value="1" onclick="dis('1')"/> </td> 
-       <td><input type="button" value="2" onclick="dis('2')"/> </td> 
-       <td><input type="button" value="3" onclick="dis('3')"/> </td> 
-       <td><input type="button" value="/" onclick="dis('/')"/> </td> 
-    </tr> 
-    <tr> 
-       <td><input type="button" value="4" onclick="dis('4')"/> </td> 
-       <td><input type="button" value="5" onclick="dis('5')"/> </td> 
-       <td><input type="button" value="6" onclick="dis('6')"/> </td> 
-       <td><input type="button" value="-" onclick="dis('-')"/> </td> 
-    </tr> 
-    <tr> 
-       <td><input type="button" value="7" onclick="dis('7')"/> </td> 
-       <td><input type="button" value="8" onclick="dis('8')"/> </td> 
-       <td><input type="button" value="9" onclick="dis('9')"/> </td> 
-       <td><input type="button" value="+" onclick="dis('+')"/> </td> 
-    </tr> 
-    <tr> 
-       <td><input type="button" value="." onclick="dis('.')"/> </td> 
-       <td><input type="button" value="0" onclick="dis('0')"/> </td> 
-       <!-- solve function call function solve to evaluate value -->
-       <td><input type="button" value="=" onclick="solve()"/> </td> 
-       <td><input type="button" value="*" onclick="dis('*')"/> </td> 
-    </tr> 
- </table> 
+
 
 <script src="assets/js/main.js"></script>   
 </body>
